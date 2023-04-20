@@ -1,0 +1,173 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(./sahara\ desert.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+}
+
+.container-1
+{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar
+{
+    display: flex;
+}
+ul li
+{
+    list-style: none;
+    margin: 0px 20px;
+    padding: 0px 10px;
+    display: inline-block;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+.sahara
+{
+    color: white;
+
+}
+h1
+{
+    font-size: 80px;
+}
+p
+{
+    
+    font-size:15px ;
+    padding-top:0px;
+    /* position: relative;
+    top: 1px; */
+}
+.explore
+{
+    color: black;
+    height: 30px;
+    width: 120px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 7px;
+    /* position: relative;
+    left: 15%; */
+}
+.grid
+{
+    display: grid;
+    grid-template-columns: 250px 250px;
+    height: 400px;
+    /* width: 100px; */
+    row-gap: 20px;
+    column-gap: 30px;
+    
+}
+.box
+{
+    background-color: white;
+    border-radius: 10px;
+    /* margin-left: 70px; */
+    color: white;
+    padding-left: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    /* column-gap: 10px; */
+}
+.box:hover{
+    transform: translateY(-10px)
+}
+.container-2
+{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    /* margin-left: 80px; */
+}
+.box1
+{
+    background-image: url(./pic-1.png);
+    background-size:cover ;
+
+}
+.box2
+{
+    background-image: url(./pic-2.png);
+    background-size:cover ;
+}
+.box3
+{
+    background-image: url(./pic-3.png);
+    background-size:cover ;
+}
+.box4
+{
+    background-image: url(./pic-4.png);
+    background-size:cover ;
+}
+.first
+{
+    font-size: 10px;
+    line-height: 30px;
+    padding-top: 5px;
+}
+@media screen and (min-width:280px) and (max-width:500px){
+
+    body{
+        background-size: auto;
+        height: auto;
+        background-repeat: repeat;
+        
+    }
+    .grid{
+        grid-template-columns: 250px;
+        justify-content: center;
+        
+    }
+    .container-2{
+        display: block;
+    }
+    .box{
+        height: 250px;
+        justify-content: center;
+        margin-top: 80px;
+        position:relative ;
+        left: 10px;
+    }
+    ul li{
+        display: block;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:900px){
+
+    body{
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        background-repeat: repeat;
+    }
+    .grid{
+        grid-template-columns:450px ;
+        justify-content: center;
+        /* display: block; */
+    }
+    .container-2{
+        display: block;
+    }
+    .box{
+        height: 250px;
+        justify-content: center;
+        margin-top: 80px;
+        position: relative;
+        left: 10px;
+    }
+    
+}
